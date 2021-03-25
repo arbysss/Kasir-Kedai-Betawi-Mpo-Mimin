@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C5077"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbKrl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#831D1D"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tbKrl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="tanggal pemesanan"
+                        android:textAllCaps="true"
+                        android:textColor="#2C5077"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/tanggal_berangkat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_date_range_black_24dp"
+                        android:drawablePadding="20dp"
+                        android:hint="Tanggal Berangkat"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="#BACBCF" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Menu"
+                            android:gravity="center"
+                            android:textAllCaps="true"
+                            android:textColor="#2C5077"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+
+
+                        <Spinner
+                            android:id="@+id/menu1"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp" />
+
+
+
+                        <Spinner
+                            android:id="@+id/menu2"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1" />
+
+
+
+                        <Spinner
+                            android:id="@+id/menu3"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp" />
+
+
+
+                        <Spinner
+                            android:id="@+id/menu4"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1" />
+
+
+
+                        <Spinner
+                            android:id="@+id/menu5"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp" />
+
+
+
+                        <Spinner
+                            android:id="@+id/menu6"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/coba"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="Jumlah"
+                            android:textAllCaps="true"
+                            android:textColor="#2C5077"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+
+
+                        <Spinner
+                            android:id="@+id/jumlah1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+
+
+                        <Spinner
+                            android:id="@+id/jumlah2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+
+
+                        <Spinner
+                            android:id="@+id/jumlah3"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+
+
+                        <Spinner
+                            android:id="@+id/jumlah4"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+
+
+                        <Spinner
+                            android:id="@+id/jumlah5"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+
+
+                        <Spinner
+                            android:id="@+id/jumlah6"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/book"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Simpan pemesanan"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:backgroundTint="#831D1D"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
